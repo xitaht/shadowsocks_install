@@ -190,7 +190,7 @@ config_shadowsocks(){
     "local_port":1080,
     "password":"${shadowsockspwd}",
     "timeout":600,
-    "method":"aes-256-cfb"
+    "method":"chacha20"
 }
 EOF
 }
@@ -236,7 +236,7 @@ install_libev(){
     echo -e "Your Password: \033[41;37m ${shadowsockspwd} \033[0m"
     echo -e "Your Local IP: \033[41;37m 127.0.0.1 \033[0m"
     echo -e "Your Local Port: \033[41;37m 1080 \033[0m"
-    echo -e "Your Encryption Method: \033[41;37m aes-256-cfb \033[0m"
+    echo -e "Your Encryption Method: \033[41;37m chacha20 \033[0m"
     echo
     echo "Welcome to visit:https://teddysun.com/358.html"
     echo "Enjoy it!"
